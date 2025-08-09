@@ -18,7 +18,7 @@ The model’s goal is to recommend diet types (e.g., high-protein, low-carb, etc
 
 Once a nutrition class is inferred, a prompt-based system powered by OpenAI’s GPT models takes over. The `meal.py` script structures these prompts dynamically—tailoring content based on risk scores, lifestyle flags (e.g., vegetarian), and known restrictions (e.g., lactose intolerance). The generated meal plans are structured, context-aware, and consistent across runs.
 
-This hybrid approach bridges hardcoded SNP risk scoring with generative flexibility—producing meal plans that feel both medically grounded and personalized.
+This hybrid approach bridges quantum mechanical SNP risk scoring with generative flexibility—producing meal plans that feel both medically grounded and personalized.
 
 ## Tech Stack
 
