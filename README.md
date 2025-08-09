@@ -10,7 +10,7 @@ This dataset is stored in structured CSVs (e.g., `bmi_generated_data.csv`, `live
 
 ## 🧠 Quantum Neural Network (QNN) Integration
 
-Implements a post variational quantum neural network to learn correlations between genetic profiles and nutrition categories. While not run on real quantum hardware, the QNN architecture introduces entanglement-like interactions between features to capture non-linear dependencies that classical linear models might miss.
+Implements a post variational quantum neural network to learn correlations between genetic profiles and nutrition categories. The QNN architecture introduces unique entanglement-like interactions between features to capture non-linear dependencies that classical linear models might miss.
 
 The model’s goal is to recommend diet types (e.g., high-protein, low-carb, etc.) given a PRS vector.
 
