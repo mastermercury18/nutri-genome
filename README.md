@@ -2,19 +2,23 @@
 
 This project builds a complete genomics-to-nutrition pipeline using synthetic SNP data, quantum-inspired neural networks, and language-model-driven recommendation logic. The goal is to generate adaptive, evidence-aligned meal plans based on a user’s polygenic risk profile—all accessible via a lightweight web interface.
 
-## 🧪 Genetic Risk Modeling
+<img width="1467" height="764" alt="Screenshot 2025-08-15 at 1 37 36 PM" src="https://github.com/user-attachments/assets/31d4906b-e027-4ebc-b45b-51daea94142f" />
+<img width="1463" height="766" alt="Screenshot 2025-08-15 at 1 38 28 PM" src="https://github.com/user-attachments/assets/698e1b59-3d66-4833-bd27-325f3e522186" />
+<img width="1463" height="762" alt="Screenshot 2025-08-15 at 1 39 22 PM" src="https://github.com/user-attachments/assets/3f71c692-2c36-4c53-a208-7affd46559da" />
+
+## Genetic Risk Modeling
 
 The process begins with simulated SNP data reflecting key nutrition-relevant traits—liver cirrhosis, BMI, and iron absorption. For each individual, the code randomly generates genotypes (0, 1, 2 copies of a risk allele) across curated SNPs. Using published beta coefficients, it computes polygenic risk scores (PRS) for each trait. Based on quantized thresholds, individuals are labeled "HIGH" or "LOW" risk—creating a labeled dataset of synthetic genomic profiles.
 
 This dataset is stored in structured CSVs (e.g., `bmi_generated_data.csv`, `liver_generated_data.csv`) and serves as the training/test bed for downstream models.
 
-## 🧠 Quantum Neural Network (QNN) Integration
+## Quantum Neural Network (QNN) Integration
 
 Implements a post variational quantum neural network to learn correlations between genetic profiles and nutrition categories. The QNN architecture introduces unique entanglement-like interactions between features to capture non-linear dependencies that classical linear models might miss. 
 
 The model’s goal is to recommend diet types (e.g., high-protein, low-carb, etc.) given a PRS vector in a more accurate and comprehensible manner than its classical counterparts.
 
-## 🧬 LLM-Powered Meal Generation
+## LLM-Powered Meal Generation
 
 Once a nutrition class is inferred, a prompt-based system powered by OpenAI’s GPT models takes over. The `meal.py` script structures these prompts dynamically—tailoring content based on risk scores, lifestyle flags (e.g., vegetarian), and known restrictions (e.g., lactose intolerance). The generated meal plans are structured, context-aware, and consistent across runs.
 
